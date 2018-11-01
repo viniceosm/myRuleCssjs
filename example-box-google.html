@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MyRuleCss.js</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<style>
+		* {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.box-login-google {
+			width: 200px;
+			height: 100px;
+
+			padding: 40px;
+
+			-webkit-border-radius: 8px;
+			border-radius: 8px;
+		}
+	</style>
+
+	<script src="my-rule-css.js"></script>
+</head>
+
+<body>
+	<div class="box-login-google">
+		<center>Fernanda Schmidt</center>
+	</div>
+
+	<script>
+
+	var centralizaElemento = {
+		'position': 'absolute',
+		'margin': 'auto',
+		'top': 0,
+		'bottom': 0,
+		'left': 0,
+		'right': 0
+	};
+
+	var sombraGoogle = {
+		'-webkit-box-shadow': '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)',
+		'box-shadow': '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)'
+	}
+
+	var ruleMine = new MyRuleCssjs();
+
+	// centraliza box
+	ruleMine.css('.box-login-google', centralizaElemento);
+	// adiciona sombra
+	ruleMine.css('.box-login-google', sombraGoogle);
+
+	</script>
+</body>
+</html>
