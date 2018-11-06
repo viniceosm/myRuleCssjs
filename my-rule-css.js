@@ -1,12 +1,17 @@
 function MyRuleCssjs () {};
 MyRuleCssjs.prototype = {
 	css: function (selector, aPropsValues) {
-		var rule = selector + '{';
-		for (prop of Object.keys(aPropsValues)) {
-			rule += '\n\t' + prop + ': ' + aPropsValues[prop] + ';';
+		aPropsValues = aPropsValues.split('\n');
+
+		aPropsValues = aPropsValues.filter(function(pv){ return pv.trim() !== '' });
+
+		for (i in aPropsValues) {
+			aPropsValues[i] = aPropsValues[i].trim();
 		}
 
-		rule += '\n}';
+		aPropsValues = aPropsValues.join('\n');
+
+		var rule = selector + '{\n' + aPropsValues + '\n}';
 
 		this.addRuleClass(rule);
 	},
