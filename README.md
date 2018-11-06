@@ -1,8 +1,10 @@
 # myRuleCssjs
+
 > my js my rules css
 
 Create rules css using js.
-Para quem não quer usar Pré-processador CSS (para não repetir blocos de códigos css) é uma alternativa para salvar partes css em variáveis.
+
+Para quem nÃ£o quer usar PrÃ©-processador CSS (para nÃ£o repetir blocos de cÃ³digos css) Ã© uma alternativa para salvar partes css em variÃ¡veis.
 
 css:
 
