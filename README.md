@@ -4,7 +4,7 @@
 
 Create rules css using js.
 
-Para quem não quer usar Pré-processador CSS (para não repetir blocos de códigos css) é uma alternativa para salvar partes css em variáveis.
+Para não repetir blocos de códigos CSS e não quer usar Pré-processador CSS é uma alternativa para salvar partes CSS em variáveis.
 
 css:
 
